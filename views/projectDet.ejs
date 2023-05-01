@@ -1,0 +1,42 @@
+<div style="display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+" class="container">
+   <div class="project-det">
+    <div>
+      <h1>Project Name: <%=doc.projectname%></h1>
+      <h6><%=doc.decre%></h6>
+      <h5>Author: <span style="font-size: 1rem;"> <%=doc.author%></span></h5>
+    </div>
+    <div>
+        <a href="/addissue/<%=doc._id%>"><p><i class="fa fa-plus-square"> Add Issue</p></i></a>
+    </div>
+   </div>
+   <div class="add-filter">
+     <form action="/search/<%=doc._id%>" method="get">
+       <input type="text" name="search" id="search" placeholder="Serch by Project Name">
+       <div style="margin: 1rem;">
+        <h5>Select lable</h5>
+        <input type="checkbox" name="lable" value="Software">Software
+        <input type="checkbox" name="lable" value="Bug">Bug
+        <input type="checkbox" name="lable" value="Small issue">Small issue
+        <input type="checkbox" name="lable" value="Big Issue">Big Issue
+        <input type="checkbox" name="lable" value="code problem">code problem
+     </div>
+        <input type="text" name="author" placeholder="Author">
+        <button type="submit">Search</button></form>
+   </div>
+   <div class="issue-div">
+    <%for(issues of issue){%>
+      <div style="display: flex;justify-content: space-between;" class="isssu1">
+        <div><h3 style="color: red;"><%=issues.issuename%></h3>
+        <h5>Lable : <span style="font-size: 1rem;"><%=issues.lable%></span></h5>
+        <p><%=issues.description%></p>
+        <h6>Author:  <%=issues.author%></h6></div>
+        <div>
+          <a href="/delissue/<%=issues._id%>"><p><i class="fa fa-trash-o" aria-hidden="true"></i></p></a>
+        </div>
+     </div>
+    <%}%>
+       </div>
+</div>

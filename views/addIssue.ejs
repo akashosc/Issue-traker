@@ -1,0 +1,17 @@
+<div class="container">
+    <h1 style="text-align: center;">Add Issue for Project</h1>
+    <form action="/addissue/<%=id%>" method="post" class="add-project">
+     <input type="text" name="issuename" placeholder="Enter Issue name">
+     <div style="margin: 1rem;">
+        <h5>Select lable</h5>
+        <input type="checkbox" name="lable" value="Software">Software
+        <input type="checkbox" name="lable" value="Bug">Bug
+        <input type="checkbox" name="lable" value="Small issue">Small issue
+        <input type="checkbox" name="lable" value="Big Issue">Big Issue
+        <input type="checkbox" name="lable" value="code problem">code problem
+     </div>
+     <input type="text" name="description" placeholder="Description">
+     <input type="text" name="author" placeholder="Enter Author">
+     <button type="submit">Submit</button>
+    </form>
+</div>

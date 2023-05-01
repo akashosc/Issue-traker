@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color:var(--second);
+}
+:root{
+    --first:#2D2727;
+    --second:#413543;
+    --third:#191825;
+}
+a p{
+    font-size: 2rem;
+}
+a{
+    all:unset;
+    text-decoration:none;
+    color:inherit;
+}
+a:hover{
+    text-decoration: none; 
+}
+
+.navbars{
+    padding: 3rem;
+    color: red;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--first);
+}
+.container{
+    border-radius: 1rem;
+    padding: 2rem;
+    color: white;
+    margin-top:1rem ;
+    background-color: var(--third);
+}
+.project-term{
+    margin-top: 2rem;
+    display: flex;
+    border-radius: 1rem;
+    justify-content:space-between;
+    padding: 2rem;
+    background-color: var(--first);
+}
+.add-project{
+    display: flex;
+    flex-direction: column;
+}
+.add-project input,button{
+    color: white;
+    border: 0;
+    background-color: var(--second);
+    font-size: 1.5rem;
+    margin: 0.5rem;
+    outline: none;
+    padding: 0.8rem;
+    border-radius: 1rem;
+}
+.add-filter{
+  margin-bottom: 2rem;
+}
+.add-filter input{
+    color: white;
+    border: 0;
+    background-color: var(--second);
+    font-size: 1rem;
+    margin: 0.5rem;
+    outline: none;
+    padding: 0.8rem;
+    border-radius: 1rem;
+}
+.project-det{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+}
+.check{
+    background-color: aqua;
+    border: 2px solid;
+}
+.isssu1{
+    padding: 1rem;
+    background-color: #0A2647;
+    margin-bottom: 1rem;
+}

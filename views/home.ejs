@@ -1,0 +1,20 @@
+<div>
+    <div style="text-align: center;">
+        <h1>LIst of <span style="color: red;"> Project</span></h1>
+    </div>
+<div>
+    <% for(docs of doc) {%>
+        <div class="project-term">
+            <div class="project-decr">
+                <h3 style="color: #BAD7E9;">Name: <%=docs.projectname%></h3>
+                <p><%=docs.decre%></p>
+                <h4 style="color: #BAD7E9;">Author:<span style="font-size: 1rem; color: white;"><%=docs.author%></span></h4>
+            </div>
+            <div>
+            <a href="/projectDet/<%=docs._id%>"><p><i class="fa fa-eye" aria-hidden="true"></i></p></a>
+              <a href="/delproject/<%=docs._id%>"><p><i class="fa fa-trash-o" aria-hidden="true"></i></p></a>
+            </div>
+         </div>
+    <%}%>
+     </div>
+</div>
